@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rental</title>
+    <link rel="stylesheet" type="text/css" href="Rental.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="javascripts.js"></script>
+</head>
+<body>
+<form id="rentalform" onsubmit="calculate()">
+    <table id="table1">
+        <tr>
+            <td>Last Name:</td>
+            <td><input name="lastname" type="text" maxlength="50" id="lastname" required >
+            </td>
+        </tr>
+
+        <tr>
+            <td>First Name:</td>
+            <td><input name="firstname" type="text" maxlength="50" id="firstname" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Street Address:</td>
+            <td><input name="streetaddress" type="text" maxlength="50" id="saddress" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>State:</td>
+            <td><input name="state" type="text" maxlength="50" id="state" required></td>
+        </tr>
+
+         <tr>
+            <td>Email:</td>
+            <td><input name="email" type="email" maxlength="50" id="eaddress" required></td>
+         </tr>
+
+        <tr>
+            <td>Contact Phone #:</td>
+            <td><input type="tel" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    id="phone" required></td>
+        </tr>
+    </table>
+    <table id="table2">
+    <tr>
+        <td>Rental Days:</td>
+        <td><input id="rentaldays" type="number" min="1" max="30" value="" required></td>
+    </tr>
+
+    <tr>
+        <td><input type="radio" id="compact" name="vehicletype" value="15.00">Compact</td>
+        <td>$15.00/day
+            <img id="vehicleimages" src="photos\comp.png" alt="Broken Image">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="radio" id="midsize" name="vehicletype" value="20.00">Mid-size</td>
+        <td>$20.00/day
+            <img id="vehicleimages" src="photos\suv.png" alt="Broken Image">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="radio" id="luxury" name="vehicletype" value="35.00">Luxury</td>
+        <td>$35.00/day
+            <img id="vehicleimages" src="photos\spor.png" alt="Broken Image">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="radio" id="vantruck" name="vehicletype" value="40.00">Van/Truck</td>
+        <td>$40.00/day
+            <img id="vehicleimages" src="photos\truc.png" alt="Broken Image">
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" value="Roof Rack/Bicycle Rack" id="rack">Roof Rack/Bicycle Rack</td>
+        <td>+$5.00/day</td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" value="GPS" id="gps">GPS</td>
+        <td>+$10.00/day</td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" value="Child Seat" id="childseat">Child Seat</td>
+        <td>Free</td>
+    </tr>
+</table>
+    <div id=srbuttons>
+        <input type="submit" id=sb>
+        <input type="reset" id=rb>
+    </div>
+</form>
+
+<table id="t1">
+    <tr>
+        <td>
+            <h2>Search Client by Last Name:</h2>
+        </td>
+        <td>
+            <input type="text" id="searchfield">
+        </td>
+    </tr>
+</table>
+
+<table id="t2"></table>
+
+</body>

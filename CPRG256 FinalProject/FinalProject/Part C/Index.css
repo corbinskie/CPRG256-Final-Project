@@ -1,0 +1,39 @@
+body {
+	background-color: white;
+	background-image: url(photos/bg.png);
+	background-size: cover;
+	opacity: 100;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+	font-size: 30px;
+	color: black;
+    text-align: center;
+}
+
+h1 {
+	text-align: center;
+    color: white;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: -50px;
+	display: block;
+}
+#frontpic {
+
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: -550px;
+	display: block;
+	width: 35%;
+	height: 35%;
+	border-radius: 25px;
+}
+
+footer{
+	margin-top: 33%;
+	color: white;
+}
